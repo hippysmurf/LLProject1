@@ -1,0 +1,49 @@
+/* these are comments at the top of my css file */
+header {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* applied across the entire file */
+* {
+    font-family:'Righteous', sans-serif;
+    font-weight: 600;
+}
+
+/* section class */
+.section {
+    background-color: rgb(198, 232, 243);
+    padding: 20px;
+    margin: 20px;
+}
+
+/* apply to specific articles */
+#about-me {
+    color: orchid;
+}
+
+#games-i-play {
+    color: orange;
+}
+
+#strategies-and-cheats {
+    color: green;
+}
+
+/* box model applied to all images */
+img {        
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+/* class for footer images - make sure we overwrite what we don't want from the standard images */
+.footerimg {
+    width: 25px;
+    height: 25px;
+    border: none;
+    margin: none;
+}
