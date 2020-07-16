@@ -11,6 +11,18 @@ header {
     font-weight: 600;
 }
 
+/* navigation bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* buttons in navigation bar */
+button {
+    height: 40px;
+    width: 120px;
+}
+
 /* section class */
 .section {
     background-color: rgb(198, 232, 243);
@@ -47,3 +59,23 @@ img {
     border: none;
     margin: none;
 }
+
+/* Use flex to lay things out horizontally 
+   align-items is center as origin */
+#header-info, #about-me, #games-i-play, #strategies-and-cheats {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer-text {
+    display: flex;
+    justify-content: center;
+} 
+
+#footer-images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
