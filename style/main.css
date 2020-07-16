@@ -17,10 +17,12 @@ nav {
     justify-content: space-around;
 }
 
-/* buttons in navigation bar */
-button {
+/* anchor tags in navigation bar */
+a {
+    display: flex;
+    align-items: center;
     height: 40px;
-    width: 120px;
+    width: 200px;
 }
 
 /* section class */
