@@ -1,8 +1,8 @@
 /* these are comments at the top of my css file */
 header {
-    background-color: white;
+    background-color: #e4a7cf;
     padding: 20px;
-    margin: 20px;
+    border-radius: 10px;
 }
 
 /* applied across the entire file */
@@ -21,28 +21,70 @@ nav {
 a {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 40px;
     width: 200px;
+    color: black;
+    text-decoration: none;
+}
+
+/* change appearance when we're hovering over */
+a:hover{
+    transform: scale(1.5);
+    font-weight: bold;
+    transition: all 0.5s linear;
 }
 
 /* section class */
 .section {
-    background-color: rgb(198, 232, 243);
     padding: 20px;
     margin: 20px;
+    box-shadow: 0px 0px 15px 6px #ccc;
+    border-radius: 10px;
+}
+
+/* change appearance when selecing */
+p::selection {
+    background-color: yellow;
+}
+
+p::first-letter {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* animation */
+.selection {
+    background-color: magenta;
+    transition-property: color;
+    transition-delay: 1.5s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
 }
 
 /* apply to specific articles */
 #about-me {
     color: orchid;
+    transition-property: color;
+    transition-delay: 1.5s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
 }
 
 #games-i-play {
     color: orange;
+    transition-property: color;
+    transition-delay: 1.5s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
 }
 
 #strategies-and-cheats {
     color: green;
+    transition-property: color;
+    transition-delay: 1.5s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
 }
 
 /* box model applied to all images */
@@ -54,12 +96,24 @@ img {
     margin: 20px;
 }
 
+/* setting background for footer */
+footer {
+    background-color: #f3eeee;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 /* class for footer images - make sure we overwrite what we don't want from the standard images */
 .footerimg {
     width: 25px;
     height: 25px;
     border: none;
     margin: none;
+}
+
+.footerimg:hover{
+    width: 50px;
+    height: 50px;
 }
 
 /* Use flex to lay things out horizontally 
@@ -73,11 +127,21 @@ img {
 #footer-text {
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid black;
+    margin: 25px;
 } 
 
 #footer-images {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+}
+
+#footer-images p {
+    display: none;
+}
+
+#footer-images a:hover + p {
+    display: block;
 }
 
