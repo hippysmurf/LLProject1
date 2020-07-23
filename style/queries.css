@@ -1,0 +1,11 @@
+/* for a web page */
+@media screen and (max-width: 768px) {
+    /* do something */
+    #header-info, #about-me, #games-i-play, #strategies-and-cheats {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* for mobile */
