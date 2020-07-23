@@ -43,6 +43,11 @@ a:hover{
     border-radius: 10px;
 }
 
+.section div {
+    display: flex;
+    flex-direction: column;
+}
+
 /* change appearance when selecing */
 p::selection {
     background-color: yellow;
@@ -121,7 +126,6 @@ footer {
 #header-info, #about-me, #games-i-play, #strategies-and-cheats {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 #footer-text {
