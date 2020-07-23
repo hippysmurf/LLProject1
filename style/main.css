@@ -39,13 +39,13 @@ a {
     width: 200px;
     color: black;
     text-decoration: none;
+    transition: transform 0.5s linear, font-weight 0.5s linear;
 }
 
 /* change appearance when we're hovering over */
 a:hover{
     transform: scale(1.5);
     font-weight: bold;
-    transition: all 0.5s linear;
 }
 
 /* add this with javascript in order to offset the anchors 
