@@ -1,8 +1,21 @@
 /* these are comments at the top of my css file */
+
+/* background colour gradient */
+body {
+    background: linear-gradient(to left top, rgb(5, 41, 241), rgb(238, 8, 46)) fixed;
+}
+
 header {
-    background-color: #e4a7cf;
     padding: 20px;
     border-radius: 10px;
+    /* add this with javascript since anchors don't work with offsets
+    position: fixed;
+    top: 0;
+    width: 100%;*/
+}
+
+#header-info {
+    font-size: x-large;
 }
 
 /* applied across the entire file */
@@ -35,6 +48,12 @@ a:hover{
     transition: all 0.5s linear;
 }
 
+/* add this with javascript in order to offset the anchors 
+main {
+    margin-top: 300px;
+
+} */
+
 /* section class */
 .section {
     padding: 20px;
@@ -58,14 +77,6 @@ p::first-letter {
     font-weight: bold;
 }
 
-/* animation */
-.selection {
-    background-color: magenta;
-    transition-property: color;
-    transition-delay: 1.5s;
-    transition-duration: 2s;
-    transition-timing-function: ease-in;
-}
 
 /* apply to specific articles */
 #about-me {
@@ -103,7 +114,6 @@ img {
 
 /* setting background for footer */
 footer {
-    background-color: #f3eeee;
     padding: 20px;
     border-radius: 10px;
 }
