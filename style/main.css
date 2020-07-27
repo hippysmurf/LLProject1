@@ -2,7 +2,7 @@
 
 /* background colour gradient */
 body {
-    background: linear-gradient(to left top, rgb(5, 41, 241), rgb(238, 8, 46)) fixed;
+    background: linear-gradient(to left top, rgb(88, 110, 235), rgb(238, 88, 113)) fixed;
 }
 
 header {
@@ -77,10 +77,13 @@ p::first-letter {
     font-weight: bold;
 }
 
+P {
+    font-size: larger;
+}
 
 /* apply to specific articles */
 #about-me {
-    color: orchid;
+    color: lightblue;
     transition-property: color;
     transition-delay: 1.5s;
     transition-duration: 2s;
@@ -88,7 +91,7 @@ p::first-letter {
 }
 
 #games-i-play {
-    color: orange;
+    color: lightpink;
     transition-property: color;
     transition-delay: 1.5s;
     transition-duration: 2s;
@@ -96,7 +99,7 @@ p::first-letter {
 }
 
 #strategies-and-cheats {
-    color: green;
+    color: whitesmoke;
     transition-property: color;
     transition-delay: 1.5s;
     transition-duration: 2s;
@@ -141,7 +144,7 @@ footer {
 #footer-text {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
     margin: 25px;
 } 
 
